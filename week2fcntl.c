@@ -11,12 +11,12 @@ int main()
 	int fd1 =0, fd2 =0, fd3 = 0;
 	fd1 = open("./week2_fcntl_data",O_WRONLY|O_CREAT|O_TRUNC);
 
-	pritnf("fcntl(F_DUPFD) TEST\n");
+	printf("fcntl(F_DUPFD) TEST\n");
 	fd2 = fcntl(fd1, F_DUPFD,30);
 	printf("fd2: %d\n", fd2);
 
 	fd3 = fcntl(fd1, F_DUPFD,30);
-	printf("fd3: %d\n"fd3);
+	printf("fd3: %d\n",fd3);
 
 	close(fd2);
 	close(fd3);

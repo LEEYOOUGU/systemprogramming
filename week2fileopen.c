@@ -24,7 +24,4 @@ int main(int argc,char **argv)
 	printf("success open %s\n",argv[1]);
 	close(fd);
 	return 0;
-
-
-
 }
